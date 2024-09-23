@@ -1,0 +1,36 @@
+{
+  "name": "brightecapital/salesforce-orm",
+  "description": "Salesforce ORM",
+  "keywords": [ "Salesforce", "ORM", "Entity", "Entity Manager", "Repository" ],
+  "homepage": "https://github.com/brightecapital/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ken Ngo",
+      "email": "ken.ngo@brighte.com.au"
+    }
+  ],
+  "require": {
+    "php": "^8.1||^7.0",
+    "eventfarm/restforcephp": "dev-master",
+    "doctrine/annotations": "^1.6",
+    "psr/log": "^1.1",
+    "league/csv": "9.3"
+  },
+  "repositories": [
+    {
+      "url": "https://github.com/brightecapital/restforcephp-1.git",
+      "type": "git"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "9.6.x-dev"
+  },
+  "autoload": {
+    "psr-4": { "Salesforce\\": "src/" }
+  },
+  "autoload-dev":  {
+    "psr-4": { "SalesforceTest\\": "tests/" }
+  },
+  "minimum-stability": "dev"
+}
